@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamble Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">Choose Your Best Number To Wins!</div>
+
+    <div class="displayContainer">
+        <div class="displayBalance">Balance</div>
+        <div class="displayBalanceNum" id="displayBalanceNum">0$</div>
+        <div class="changesAmount" id="changesAmount"></div>
+    </div>
+
+    <div class="displayWinConditionContainer">
+        <div class="displayWinCondition">Goals</div>
+        <div class="WinCondition" id="WinCondition">100000$</div>
+    </div>
+
+    <div class="ballContainer">
+        <div class="numberBall" id="ball1">
+            <div class="numberText"  id="text1"></div>
+        </div>
+        <div class="numberBall" id="ball2">
+            <div class="numberText"  id="text2"></div>
+        </div>
+        <div class="numberBall" id="ball3">
+            <div class="numberText"  id="text3"></div>
+        </div>
+        <div class="numberBall" id="ball4">
+            <div class="numberText"  id="text4"></div>
+        </div>
+        <div class="numberBall" id="ball5">
+            <div class="numberText"  id="text5"></div>
+        </div>
+    </div>
+
+    <button class="randomizeBtn" id="randomizeBtn" onclick="randomizeFunc()">Randomize</button>
+    
+    <div class="betAmount">
+        <input type="number" placeholder="BET" min="0" value="" name="inputNumber" id="inputNumber">
+        <label for="inputNumber" id="labels">$</label>
+    </div>
+
+    <button class="submitBtn" id='submitBtn' onclick="submitFunc()">Test Your Luck!</button>
+
+    <div class="errorText" id="errorText"></div>
+
+    <div class="answerballContainer">
+        <div class="numberBall" id="ball1">
+            <div class="numberText"  id="answertext1"></div>
+        </div>
+        <div class="numberBall" id="ball2">
+            <div class="numberText"  id="answertext2"></div>
+        </div>
+        <div class="numberBall" id="ball3">
+            <div class="numberText"  id="answertext3"></div>
+        </div>
+        <div class="numberBall" id="ball4">
+            <div class="numberText"  id="answertext4"></div>
+        </div>
+        <div class="numberBall" id="ball5">
+            <div class="numberText"  id="answertext5"></div>
+        </div>
+    </div>
+
+    
+    <button class="retryButton" id="retryButton" onclick="reset()">Retry</button>
+    <script src="script.js"></script>
+</body>
+</html>
